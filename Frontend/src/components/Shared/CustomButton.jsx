@@ -1,5 +1,5 @@
 const CustomButton = ({ children, type="button", style = "primary", ...props }) => {
-  const buttonStyles = style === "primary" ? "py-2 px-4 w-full" : "py-1 px-2";
+  const buttonStyles = style === "primary" ? "py-2 px-4 w-full" : "py-0.5 px-1 text-sm";
 
   return (
     <button

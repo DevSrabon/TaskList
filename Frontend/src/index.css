@@ -10,6 +10,7 @@
   width: auto;
 }
 
+/* page animation */
 @keyframes fade-in {
   0% {
     opacity: 0;
@@ -23,4 +24,21 @@
 
 .animate-fade-in {
   animation: fade-in 0.5s ease-out;
+}
+
+/* btn animation */
+@keyframes buttonClickAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+button:active {
+  animation: buttonClickAnimation 0.1s ease-in-out;
 }

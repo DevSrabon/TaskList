@@ -1,12 +1,13 @@
+import { useState } from "react";
 import { AddListForm, Container, Lists } from "./const";
 
-function App() {
+const App = () => {
   return (
     <Container>
       <AddListForm />
       <Lists />
     </Container>
   );
-}
+};
 
 export default App;
