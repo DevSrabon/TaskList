@@ -5,12 +5,11 @@ const Lists = () => {
   const reversedListItems = [...listItems].reverse();
   return (
     <section>
-      <Heading>Lists Of Items</Heading>
+      <Heading>Lists Of Items : {listItems.length }</Heading>
       {/* Reverse the listItems array for show the latest list first */}
-      {reversedListItems
-        .map((item, index) => (
-          <List key={index} item={item} index={index} />
-        ))}
+      {reversedListItems.map((item, index) => (
+        <List key={index} item={item} index={index} />
+      ))}
     </section>
   );
 };

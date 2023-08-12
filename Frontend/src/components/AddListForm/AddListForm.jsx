@@ -12,7 +12,7 @@ import { input } from "../../const/style";
 
 const AddListForm = () => {
   const [errors, setErrors] = useState({});
-  const { handleAddToList , setIsCompleted} = useListContext();
+  const { handleAddToList } = useListContext();
   // useCallback- memorize handleSubmit fnc and minimizing unnecessary re-renders
   const handleSubmit = useCallback(
     (e) => {

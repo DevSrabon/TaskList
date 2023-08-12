@@ -57,12 +57,12 @@ const List = ({ item, index }) => {
     <div
       key={index}
       className={`bg-white shadow-md rounded p-4 mb-4 ${
-        item?.completed ? "bg-green-100 " : ""
+        isCompleted ? "bg-green-100 " : ""
       }`}
     >
       <h2
         className={`text-xl font-semibold mb-2 ${
-          item?.completed ? "line-through" : ""
+          isCompleted ? "line-through" : ""
         }`}
       >
         {item.title}
@@ -77,7 +77,7 @@ const List = ({ item, index }) => {
         />
       ) : (
         <p
-          className={`text-gray-600 mb-2 ${item?.completed ? "line-through" : ""}`}
+          className={`text-gray-600 mb-2 ${isCompleted ? "line-through" : ""}`}
         >
           {item.description}
         </p>
@@ -116,16 +116,16 @@ const List = ({ item, index }) => {
                 <input
                   type="checkbox"
                   className="form-checkbox text-green-500 h-4 w-4"
-                  checked={item?.completed}
+                  checked={isCompleted}
                   tabIndex={index}
                   onChange={() => handleCompleteToggle(index)}
                 />
                 <span
                   className={`text-sm ${
-                    item?.completed ? "line-through text-gray-600" : ""
+                    isCompleted ? "line-through text-gray-600" : ""
                   }`}
                 >
-                  {item?.completed ? "Completed" : "Not Completed"}
+                  {isCompleted ? "Completed" : "Not Completed"}
                 </span>
               </label>
             </div>
