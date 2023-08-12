@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: auto;
+  height: auto;
+  width: auto;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.5s ease-out;
+}
