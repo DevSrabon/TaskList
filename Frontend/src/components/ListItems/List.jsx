@@ -57,7 +57,7 @@ const List = ({ item, index }) => {
     <div
       key={index}
       className={`bg-white shadow-md rounded p-4 mb-4 ${
-        isCompleted ? "bg-green-100 " : ""
+        isCompleted ? "bg-green-200 " : ""
       }`}
     >
       <h2
@@ -82,7 +82,7 @@ const List = ({ item, index }) => {
           {item.description}
         </p>
       )}
-      <div className="flex items-center justify-around">
+      <div className="sm:flex items-center justify-around">
         <span className="text-gray-400 text-sm">Date: {item.date}</span>
         <div className="flex gap-2">
           {/* if editingIndex equal to listItems index show the save and cancel btn else show the edit delete btn*/}

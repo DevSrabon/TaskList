@@ -5,7 +5,7 @@ const Heading = ({ children }) => {
     <>
       <div className="flex items-center w-fit animate-bounce">
         <img src={taskImg} alt="task list" className="h-10 max-w-[40px] w-full" />
-        <h1 className="text-lg md:text-3xl font-bold text-center text-[#ff9900]">
+        <h1 className="text-lg md:text-3xl font-extrabold text-center text-green-500">
           {children}
         </h1>
       </div>

@@ -3,7 +3,7 @@ const CustomButton = ({ children, type="button", style = "primary", ...props }) 
 
   return (
     <button
-      className={`bg-blue-500 hover:bg-blue-700 text-white font-bold rounded focus:outline-none focus:shadow-outline ${buttonStyles}`}
+      className={`inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-gray-700 text-white hover:bg-gray-800 focus:bg-gray-800 focus:outline-none  transition-all text-sm ${buttonStyles}`}
       type={type}
       {...props}
     >
